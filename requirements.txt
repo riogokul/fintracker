@@ -1,0 +1,58 @@
+# Core
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+streamlit==1.31.0
+pydantic==2.6.0
+pydantic-settings==2.1.0
+
+# Data Processing
+pandas==2.2.0
+numpy==1.26.3
+feedparser==6.0.11
+beautifulsoup4==4.12.3
+aiohttp==3.9.3
+python-dateutil==2.8.2
+
+# LLM & RAG
+langchain==0.1.6
+langchain-community==0.0.20
+sentence-transformers==2.3.1
+chromadb==0.4.22
+huggingface-hub==0.20.3
+
+# Database
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.25
+alembic==1.13.1
+redis==5.0.1
+
+# APIs
+requests==2.31.0
+praw==7.7.1
+yfinance==0.2.36
+
+# Monitoring & Logging
+prometheus-client==0.19.0
+python-json-logger==2.0.7
+
+# ML & NLP
+scikit-learn==1.4.0
+nltk==3.8.1
+spacy==3.7.2
+textblob==0.18.0
+
+# Visualization
+plotly==5.18.0
+matplotlib==3.8.2
+seaborn==0.13.2
+
+# Testing
+pytest==8.0.0
+pytest-asyncio==0.23.4
+pytest-cov==4.1.0
+locust==2.20.1
+
+# Utilities
+python-dotenv==1.0.1
+loguru==0.7.2
+tenacity==8.2.3

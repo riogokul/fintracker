@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: financial-news-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: financial-news-api
+  template:
+    metadata:
+      labels:
+        app: financial-news-api
+    spec:
+      containers:
+        - name: api
+          image: financial-news-api:latest
+          ports:
+            - containerPort: 8000
+          env:
+            - name: DATABASE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: app-secrets
+                  key: database-url
+            - name: REDIS_URL
+              valueFrom:
+                secretKeyRef:
+                  name: app-secrets
+                  key: redis-url
